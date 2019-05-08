@@ -180,8 +180,8 @@
         // places a new dot
         //
         var placedot = function (event, element) {
-            var ndot = new dot(event.clientX - element.offsetLeft,
-                event.clientY - element.offsetTop + $(window).scrollTop(),
+            var ndot = new dot(event.offsetX,
+                event.offsetY,
                 settings.defaulttext,
                 settings.align,
                 element);
