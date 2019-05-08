@@ -95,9 +95,10 @@
         }, options );
 
         // initialize dots
+        var custom = this;
         settings.dots = [];
         $.each(dots, function (i, el) {
-            settings.dots.push(new dot(el.x, el.y, el.text, settings.align));
+            settings.dots.push(new dot(el.x, el.y, el.text, settings.align, custom));
         });
 
         //
